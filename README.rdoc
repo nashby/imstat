@@ -1,0 +1,13 @@
+== Description
+
+Ruby lib for checking user status in the instant messengers
+
+== Usage
+
+    require "imstat"
+	
+	#Skype status
+	Imstat::get_user_status(:messenger => :skype, :user => "echo") # => "Offline"
+	
+	#Icq status
+	Imstat::get_user_status(:messenger => :icq, :user => "123456") # => "N/A"
