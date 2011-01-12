@@ -1,5 +1,4 @@
 require 'open-uri'
-require "rexml/document"
 
 module Imstat
 

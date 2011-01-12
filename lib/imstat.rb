@@ -2,6 +2,7 @@ $:.unshift File.join(File.dirname(__FILE__), "imstat")
 
 require "skype"
 require "icq"
+require "yahoo"
 
 module Imstat
 	
@@ -12,6 +13,8 @@ module Imstat
 				skype_status = Imstat::Skype::get_status(options[:user])
 			when :icq
 				icq_status = Imstat::Icq::get_status(options[:user])
+			when :yahoo
+				yahoo_status = Imstat::Yahoo::get_status(options[:user])
 		end
 		
 	end		

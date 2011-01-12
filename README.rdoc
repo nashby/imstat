@@ -11,3 +11,6 @@ Ruby lib for checking user status in the instant messengers
 	
 	#Icq status
 	Imstat::get_user_status(:messenger => :icq, :user => "123456") # => "N/A"
+	
+	#Icq status
+	Imstat::get_user_status(:messenger => :yahoo, :user => "cdfdsdfgsd") # => "Offline"
