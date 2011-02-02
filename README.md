@@ -2,8 +2,6 @@
 
 Ruby lib for checking user status in the instant messengers
 
-== Usage
-
 ### Getting it
 
 	gem install imstat
@@ -21,10 +19,10 @@ If you want to use Skype status you must be sure about support this feature in t
 
 ##### Example
 
-Imstat::get_user_status(:messenger => :skype, :user => "echo") # => "Offline"
+	Imstat::get_user_status(:messenger => :skype, :user => "echo") # => "Offline"
 
 #### Getting ICQ status
-
+ 
 ##### Output
 
 - "Online"
@@ -34,10 +32,10 @@ Imstat::get_user_status(:messenger => :skype, :user => "echo") # => "Offline"
 
 ##### Example
 
-Imstat::get_user_status(:messenger => :icq, :user => "123456") # => "N/A"
+	Imstat::get_user_status(:messenger => :icq, :user => "123456") # => "N/A"
 
 #### Getting Yahoo status
-
+ 
 ##### Output
 
 - "Online"
@@ -45,5 +43,5 @@ Imstat::get_user_status(:messenger => :icq, :user => "123456") # => "N/A"
 
 ##### Example
 
-Imstat::get_user_status(:messenger => :yahoo, :user => "cdfdsdfgsd") # => "Offline"
+	Imstat::get_user_status(:messenger => :yahoo, :user => "cdfdsdfgsd") # => "Offline"
 
