@@ -1,36 +1,49 @@
-== Description
+# Imstat
 
 Ruby lib for checking user status in the instant messengers
 
 == Usage
 
-require "imstat"
+### Getting it
 
-#Skype status
+	gem install imstat
+
+### Using it
+	
+#### Getting Skype status
 
 If you want to use Skype status you must be sure about support this feature in the skype profile (go to Tools->Options->Privacy->Allow my online status to be shown on the web)
 
-Possible output:
+##### Output
+
 - "Online"
 - "Offline"
 
+##### Example
+
 Imstat::get_user_status(:messenger => :skype, :user => "echo") # => "Offline"
 
-#Icq status
+#### Getting ICQ status
 
-Possible output:
+##### Output
+
 - "Online"
 - "Offline"
 - "N/A"
 - "It's not a valid icq uin"
 
+##### Example
+
 Imstat::get_user_status(:messenger => :icq, :user => "123456") # => "N/A"
 
-#Yahoo status
+#### Getting Yahoo status
 
-Possible output:
+##### Output
+
 - "Online"
 - "Offline"
+
+##### Example
 
 Imstat::get_user_status(:messenger => :yahoo, :user => "cdfdsdfgsd") # => "Offline"
 
